@@ -1,0 +1,151 @@
+body {
+  display: flex;
+}
+
+#result-bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Impact";
+  font-size: 45px;
+  font-style: italic;
+}
+
+form,
+input,
+select {
+  font-size: 35px;
+}
+
+form,
+table {
+  width: 760px;
+}
+
+#countdown {
+  width: 620px;
+  height: 255px;
+  background-image: url("countdown.png");
+  color: rgb(216, 108, 45);
+}
+
+#table-result {
+  color: yellowgreen;
+  font-size: 20px;
+  background-color: darkslategray;
+}
+
+#table-result td {
+  background-color: black;
+  border: 5px solid;
+  border-color: darkslategray;
+}
+
+#destMonth,
+#destDay,
+#destYear,
+#destMin,
+#destHour,
+#nowMonth,
+#nowDay,
+#nowYear,
+#nowMin,
+#nowHour {
+  background-color: black;
+  position: absolute;
+  height: 48px;
+}
+
+#destMonth,
+#destDay,
+#destYear,
+#destMin,
+#destHour {
+  top: 44px;
+  color: greenyellow;
+}
+
+#nowMonth,
+#nowDay,
+#nowYear,
+#nowMin,
+#nowHour {
+  top: 172px;
+}
+
+#destMonth,
+#nowMonth {
+  left: 782px;
+  width: 101px;
+}
+
+#destYear,
+#nowYear {
+  left: 1012px;
+  width: 121px;
+}
+
+#destDay,
+#destMin,
+#destHour,
+#nowDay,
+#nowMin,
+#nowHour {
+  width: 62px;
+}
+
+#destDay,
+#nowDay {
+  left: 917px;
+}
+
+#destMin,
+#nowMin {
+  left: 1309px;
+}
+
+#destHour,
+#nowHour {
+  left: 1209px;
+}
+
+.destAM,
+.nowPM,
+.destPM,
+.nowAM {
+  background-color: black;
+  position: absolute;
+  left: 1168px;
+  height: 11px;
+  width: 11px;
+}
+
+.destAM {
+  top: 46px;
+}
+
+.destPM {
+  top: 83px;
+}
+
+.nowAM {
+  top: 173px;
+}
+.nowPM {
+  top: 210px;
+}
+
+.destAM,
+.destPM,
+.nowAM,
+.nowPM {
+  border-radius: 50%;
+}
+.destAM.on,
+.destPM.on {
+  background-color: greenyellow;
+}
+.nowAM.on,
+.nowPM.on {
+  background-color: rgb(216, 108, 45);
+}
